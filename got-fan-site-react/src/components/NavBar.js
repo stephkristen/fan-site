@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
     return (
-        <nav className='navbar navbar-expand-lg bg-body-tertiary my-3'>
+        <nav className='navbar navbar-expand-lg bg-body-tertiary my-3 fixed-top bg-transparent'>
             <div className='container-fluid'>
                 <NavLink className='navbar-brand' aria-current='page' to='/'>
                     Game of Thrones
