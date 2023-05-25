@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom';
 
+// TODO: bg-dark for navbar color (maybe) with white font color
+// TODO: check sticky vs fixed for content
 export default function NavBar() {
     return (
-        <nav className='navbar navbar-expand-lg bg-body-tertiary my-3 fixed-top bg-transparent'>
+        <nav className='navbar navbar-expand-lg bg-body-tertiary fixed-top bg-transparent shadow p-3 mb-5 bg-white rounded'>
             <div className='container-fluid'>
                 <NavLink className='navbar-brand' aria-current='page' to='/'>
                     Game of Thrones
