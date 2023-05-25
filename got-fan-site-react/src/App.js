@@ -4,8 +4,7 @@ import Quotes from "./components/Quotes";
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
-
-
+import './index.css';
 
 function App() {
   return (

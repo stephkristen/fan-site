@@ -1,19 +1,23 @@
+import background from "../images/got-background.jpeg"
+import '../index.css';
 
+const containerStyle= {
+    width: '100vw',
+    height: '100vh',
+    backgroundImage: `url(${background})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+}
 
 export default function Home() {
 
     return (
-        <div
-          className="p-5 mb-4 bg-body-tertiary rounded-3"
-        >
-          <div
-            className="container-fluid py-5 rounded-3"
-            style={{ backdropFilter: "brightness(2)" }}
-          >
-            <h1 className="display-5 fw-bold">Welcome Game of Thrones</h1>
-            <p className="col-md-8 fs-4">
-            </p>
-          </div>
+        <div>
+            <h1 style={{textAlign: 'center'}}>Welcome Game of Thrones Fans!</h1>
+            <div className="container"
+            style={containerStyle}>
+            </div>
         </div>
       );
     
