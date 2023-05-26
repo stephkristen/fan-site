@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-ro
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import './index.css';
+import Error from "./components/Errors";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
         <main style={{ minHeight: "90vh" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/error" element={<Error />} />
-            <Route path="*" element={<NotFound />} /> */}
+            <Route path="/error" element={<Error />} />
+            {/* <Route path="*" element={<NotFound />} /> */}
             <Route path='/houses' element={<Houses />}> </Route>
             {/* <Route path='/quotes' element={<Quotes />}></Route>
             <Route path='/characters' element={<Characters />}></Route>
