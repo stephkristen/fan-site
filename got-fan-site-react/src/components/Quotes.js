@@ -26,43 +26,56 @@ const outerContainerStyle= {
 export default function Quotes() {
     const [quote, setQuote] = useState('');
     const [character, setCharacter] = useState('');
-        // async function getRandomQuote() {
+
+        // async function getGOTObject({object}) {
+        //     let gameOfThronesObject = [];
+        //     try {
+        //         const response = await fetch('https://api.gameofthronesquotes.xyz/v1/random');
+        //         if (response.status === 200) {
+        //             const gameOfThronesObject = await response.json();
+        //             console.log(gameOfThronesObject);
+        //             // how to access what is inside this json? destructure with props?
+        //         }
+                
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // }
+
+        // try {
+        //     // setQuote(gameOfThronesObject.sentence);
+        //     // console.log(arrayOfQuotes.sentence);
+        //     // setCharacter(gameOfThronesObject.character.name);
+        // } catch (error) {
+        //     console.log(error);
+        // }
+    
+
+    // const getGOTObject = async () => {
+    //     let arrayOfQuotes = [];
     //     try {
-    //         const response = await fetch('https://api.gameofthronesquotes.xyz/v1/random');
-    //         if (response.status === 200) {
-    //             const json = await response.setQuote(json);
-    //         }
+    //         const data = axios.get('https://api.gameofthronesquotes.xyz/v1/random');
+    //         // console.log(data);
+
+    //         arrayOfQuotes = (await data).data;
             
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+
+    //     try {
+    //         setQuote(arrayOfQuotes.sentence);
+    //         // console.log(arrayOfQuotes.sentence);
+    //         setCharacter(arrayOfQuotes.character.name);
     //     } catch (error) {
     //         console.log(error);
     //     }
     // }
 
-    const quoteApi = async () => {
-        let arrayOfQuotes = [];
-        try {
-            const data = axios.get('https://api.gameofthronesquotes.xyz/v1/random');
-            // console.log(data);
-
-            arrayOfQuotes = (await data).data;
-            
-        } catch (error) {
-            console.log(error);
-        }
-
-        try {
-            setQuote(arrayOfQuotes.sentence);
-            // console.log(arrayOfQuotes.sentence);
-            setCharacter(arrayOfQuotes.character.name);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    useEffect(() => {
-        quoteApi();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    // useEffect(() => {
+    //     getGOTObject();
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, [])
 
     return (
         <div className='container-fluid' style={outerContainerStyle}>
@@ -80,7 +93,7 @@ export default function Quotes() {
                             </h6>
                         </div>
                         <p id='description'>
-                            CLick the button to generate a quote from a random character.
+                            Click the button to generate a quote from a random character.
                         </p>
                         <div className='my-3'>
                             <button className='btn btn-dark'>Quote</button>
