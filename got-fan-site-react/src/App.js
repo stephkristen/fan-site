@@ -4,6 +4,7 @@ import Quotes from "./components/Quotes";
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 import './index.css';
 
 function App() {
@@ -18,11 +19,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/quotes' element={<Quotes />}></Route>
-            {/* <Route path="/error" element={<Error />} />
-            <Route path="*" element={<NotFound />} />
+            {/* 
             <Route path='/houses' element={<Houses />}> </Route>
             <Route path='/characters' element={<Characters />}></Route>
             <Route path='/maps' element={<Maps />}></Route> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>

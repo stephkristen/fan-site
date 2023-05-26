@@ -29,6 +29,7 @@ export default function Quotes() {
             }
         }
 
+        // TODO this page gets a new quote on refresh as well as the button click
     useEffect(() => {
         getGOTObject();
         // eslint-disable-next-line react-hooks/exhaustive-deps
