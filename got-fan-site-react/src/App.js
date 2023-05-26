@@ -4,6 +4,7 @@ import Quotes from "./components/Quotes";
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 import './index.css';
 import Error from "./components/Errors";
 
@@ -11,19 +12,16 @@ function App() {
   return (
     <div>
       <Router>
-      <div className="container mt-3">
+      <div>
         <header className="mb-3">
           <NavBar />
         </header>
         <main style={{ minHeight: "90vh" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/error" element={<Error />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path='/quotes' element={<Quotes />}></Route>
             <Route path='/houses' element={<Houses />}> </Route>
-            {/* <Route path='/quotes' element={<Quotes />}></Route>
-            <Route path='/characters' element={<Characters />}></Route>
-            <Route path='/maps' element={<Maps />}></Route> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>
