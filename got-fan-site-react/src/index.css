@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
 
-body,html,h1 {
-    font-family: 'Cinzel Decorative', cursive !important
+body,
+html {
+  font-family: "Cinzel Decorative", cursive !important;
+  height: 100% !important;
+}
+
+.bg {
+  background-image: url("https://wallpaperaccess.com/full/25501.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
