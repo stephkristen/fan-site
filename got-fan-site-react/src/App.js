@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-ro
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import './index.css';
+import axios from 'axios';
 
 function App() {
   return (
